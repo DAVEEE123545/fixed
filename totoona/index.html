@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submodule Statuses</title>
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .submodule-container {
+            width: 80%;
+            max-width: 1000px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .status-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+        }
+        .status-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .status-item {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .approved {
+            background-color: #4CAF50;
+        }
+        .rejected {
+            background-color: #f44336;
+        }
+        .pending {
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+
+<div class="submodule-container">
+    <!-- Approved Section -->
+    <div class="status-section">
+        <h2>Approved</h2>
+        <div class="status-item approved">Reservation 1</div>
+        <div class="status-item approved">Reservation 2</div>
+        <div class="status-item approved">Reservation 3</div>
+    </div>
+
+    <!-- Rejected Section -->
+    <div class="status-section">
+        <h2>Rejected</h2>
+        <div class="status-item rejected">Reservation 4</div>
+        <div class="status-item rejected">Reservation 5</div>
+    </div>
+
+    <!-- Pending Section -->
+    <div class="status-section">
+        <h2>Pending</h2>
+        <div class="status-item pending">Reservation 6</div>
+        <div class="status-item pending">Reservation 7</div>
+        <div class="status-item pending">Reservation 8</div>
+    </div>
+</div>
+
+</body>
+</html>
